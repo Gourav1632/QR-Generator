@@ -19,10 +19,12 @@
                 <button type="submit">Generate</button>
             </form>
         </div>
+        <% if(locals.image){ %>
         <div class="qrBox">
-            <img src="/images/qr.png" alt="QR Image">
+            <img src=<%= image %> alt="QR Image">
             <button id="download"><a href="/images/qr.png" download="QrImage">Download</a></button>
         </div>
+        <% } %>
     </div>
     
 </body>

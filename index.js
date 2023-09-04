@@ -17,8 +17,8 @@ app.get("/",(req, res)=>{
     const url = req.body.input
     var qrImage = qr.image(url)
     qrImage.pipe(fs.createWriteStream('./public/images/qr.png'));
-
-    res.render("index.ejs")
+    var image = "./images/qr.png"
+    res.render("index.ejs",{image:image})
   })
 
   app.listen(port, ()=>{
