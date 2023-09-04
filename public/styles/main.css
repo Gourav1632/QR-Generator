@@ -4,6 +4,7 @@
 }
 body{
     background-color: #242323;
+    height: 100vh;
 }
 .outerBox{
     display: flex;
@@ -62,6 +63,13 @@ input{
 }
 input::placeholder{
     color: black;
+}
+footer{
+    color: white;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%,0%);
 }
 @media (max-width: 636px){
     h1{
