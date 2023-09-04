@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code Generator</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="outerBox">
+        <h1>QR CODE GENERATOR</h1>
+        <div class="form">
+            <form action="/" method="post">
+                <input type="text" name="input" id="" placeholder="Enter the text or URL">
+                <button type="submit">Generate</button>
+            </form>
+        </div>
+        <div class="qrBox">
+            <img src="/images/qr.png" alt="QR Image">
+            <button id="download"><a href="/images/qr.png" download="QrImage">Download</a></button>
+        </div>
+    </div>
+    
+</body>
+</html>
